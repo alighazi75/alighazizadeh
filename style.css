@@ -38,22 +38,46 @@ h1, h2, h3 {
   color: #00274C;
 }
 
+/* About Me section */
 .about-me {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 1.5rem;
+  align-items: flex-start;
+  gap: 2rem;
   margin-top: 2rem;
 }
+
+.about-me .bio {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.about-me .photo-section {
+  text-align: center;
+  min-width: 220px;
+}
+
 .about-me img {
   width: 200px;
   border-radius: 50%;
   border: 4px solid #00274C;
 }
-.about-me p {
-  flex: 1;
-  font-size: 1.1rem;
-  color: #333;
+
+/* Name, email, scholar below photo */
+.about-me .contact {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.about-me .contact a {
+  color: #00274C;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-me .contact a:hover {
+  text-decoration: underline;
 }
 
 footer {
